@@ -25,7 +25,6 @@ Flow is a minimalist, modern iOS journaling application built with SwiftUI. It b
 * **Data Visualization:** Swift Charts
 * **AI Integration:** URLSession + Custom JSON Parsing (OpenAI API)
 * **Architecture:** MVVM (Model-View-ViewModel)
-# 🌊 Flow: The Frictionless Journal & Quantified Self App
 
 ## 🚀 Getting Started
 
