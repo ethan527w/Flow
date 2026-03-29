@@ -1,13 +1,12 @@
 # 🌊 Flow: The Frictionless Quantified-Self Journal
-
 ![iOS 17+](https://img.shields.io/badge/iOS-17.0+-blue.svg)
 ![Swift 5.9](https://img.shields.io/badge/Swift-5.9-orange.svg)
 ![Architecture](https://img.shields.io/badge/Architecture-MVVM-green.svg)
 ![AI](https://img.shields.io/badge/AI-OpenAI_GPT--4o-black.svg)
 
-Flow is a minimalist, frictionless journaling and time-blocking app designed to help you capture your thoughts, track your mood, and analyze your day with the power of AI. 
 
-More than just a diary, Flow acts as a mirror to your daily life—comparing your planned schedule with your actual activities, and visualizing your energy and mood trends.
+> **Record at the speed of thought. Understand your days through AI.**
+Flow is a minimalist, modern iOS journaling application built with SwiftUI. It breaks down the barrier between feeling and recording by offering an instant-input interface, timeline-based tracking, and deep AI insights that compare your planned schedule with your actual inferred activities.
 
 ## ✨ Core Features
 
@@ -26,48 +25,50 @@ More than just a diary, Flow acts as a mirror to your daily life—comparing you
 * **Data Visualization:** Swift Charts
 * **AI Integration:** URLSession + Custom JSON Parsing (OpenAI API)
 * **Architecture:** MVVM (Model-View-ViewModel)
+# 🌊 Flow: The Frictionless Journal & Quantified Self App
 
 ## 🚀 Getting Started
 
-To run this project locally on your Mac using Xcode:
+Follow these instructions to get the project up and running on your local machine for development and testing.
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR-USERNAME/Flow.git](https://github.com/YOUR-USERNAME/Flow.git)
-   cd Flow
-Configure the AI API Key (Crucial Step):
-For security reasons, the API key is not included in this repository. You must create a local secrets file.
+### Prerequisites
+* macOS running Xcode 15 or later.
+* iOS 17.0+ Simulator or physical device.
+* An active OpenAI API Key.
 
-Open the project in Xcode.
+### Installation & Setup
 
-Right-click the root folder and select New File...
+1. **Configure the AI Secrets:**
+   For security, the API key is not included in the repository. You must create a `Secrets.plist` file.
+   * Open the project in Xcode.
+   * Right-click the root folder -> **New File...** -> **Property List**.
+   * Name it `Secrets.plist`.
+   * Add a new key-value pair:
+     * **Key:** `OPENAI_API_KEY`
+     * **Type:** `String`
+     * **Value:** `your_actual_openai_api_key_here`
+   * *Note: Ensure `Secrets.plist` is in your `.gitignore` file before making any new commits.*
 
-Choose Property List and name it Secrets.plist.
+2. **Build and Run:**
+   Select your target simulator or device in Xcode and press `Cmd + R`.
 
-Add a new row:
+---
 
-Key: OPENAI_API_KEY
+## 🗺 Roadmap / Future Work
 
-Type: String
+- [x] Core Data/SwiftData models & Timeline UI
+- [x] Custom Schedule Management
+- [x] OpenAI API integration & JSON parsing
+- [x] Swift Charts for Energy/Mood visualization
+- [ ] **Dynamic Island & Live Activities:** Every 10-minute prompt for instant mood rating.
+- [ ] **Settings Menu:** Custom theme colors and configurable metrics.
+- [ ] **Weekly/Monthly Insights:** Aggregating DailySummaries into longer-term trends.
 
-Value: your-actual-openai-api-key-here
+---
 
-Note: Secrets.plist is already included in the .gitignore to prevent accidental uploads.
+## 📄 License
 
-Build and Run:
-Select an iOS 17+ simulator or your physical device, and hit Cmd + R.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-🗺 Roadmap
-[x] Core Timeline & SwiftData Models
-
-[x] Schedule Management & Color Syncing
-
-[x] Toolbox (Emoji & Score Tracking)
-
-[x] AI Day Review & Data Visualization (Charts)
-
-[ ] Live Activities & Dynamic Island: Implement ActivityKit for seamless 10-minute check-ins without opening the app.
-
-[ ] Settings Module: Custom theme colors and personalized metrics.
-
-Designed and built with ❤️ by [Your Name/Handle]
+---
+*Designed & Developed by Ethan ｜ Bilibili @氘氚新能源*
